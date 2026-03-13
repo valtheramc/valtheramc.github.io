@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My First Website</title>
+<title>ValtheraMC</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>Hello World</h1>
-<p>This is my website hosted on GitHub Pages.</p>
+<header>
+<h1>ValtheraMC</h1>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="news.html">News</a>
+<a href="https://discord.gg/">Discord</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Welcome to ValtheraMC</h2>
+
+<p>A Worldbuilding Geopolitical Server with many custom features.</p>
+
+<div class="buttons">
+
+<button onclick="copyIP()">Copy Server IP</button>
+
+<a class="btn" href="https://discord.gg/5ZdPbUXPz2">Join Discord</a>
+
+</div>
+
+<p class="ip">IP: play.valtheramc.com</p>
+
+</section>
+
+<section class="info">
+
+<h3>About the Server</h3>
+
+<p>
+Create nations, forge alliances, and conquer your enemies in a persistent world.
+Build cities, fight wars, and shape history.
+</p>
+
+</section>
+
+<footer>
+
+<p>ValtheraMC</p>
+
+</footer>
+
+<script>
+
+function copyIP() {
+navigator.clipboard.writeText("play.valtheramc.com");
+alert("Server IP copied!");
+}
+
+</script>
 
 </body>
 </html>
